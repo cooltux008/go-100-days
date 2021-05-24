@@ -1,0 +1,19 @@
+papackage main
+
+import (
+	"fmt"
+
+	"github.com/micro/micro"
+	"log"
+	"context"
+	"errors"
+	"go-100-days/2.1/message"
+)
+
+func main() {
+	service := micro.NewService(
+		micro.Name("student_service"),
+		micro.Version("v1.0.0"),
+	)
+	fmt.Println(service)
+}
